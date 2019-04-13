@@ -1,0 +1,61 @@
+body {
+    background-color: whitesmoke;
+}
+
+.body{
+    margin-top: 50px;
+}
+
+a {
+    color: black;
+}
+
+.activeLink{
+    color: red;
+}
+
+.navbar-expand-lg .navbar-collapse {    
+    white-space: nowrap;
+    background-color: #fff!important;
+}
+
+@media (min-width: 992px) {
+.navbar-expand-lg .navbar-collapse {
+    margin-left: 50px;
+    padding-right: 200px;
+}}
+
+.dropdown-toggle-split::after, .dropright .dropdown-toggle-split::after, .dropup .dropdown-toggle-split::after {
+    margin-left: 20px;
+}
+
+.bg-light {
+    background-color: #fff!important;
+}
+
+.btn-primary {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.btn-primary:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255,255,255);
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255,255,255);
+}
+
