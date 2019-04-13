@@ -20,10 +20,15 @@ a {
 }
 
 @media (min-width: 992px) {
-.navbar-expand-lg .navbar-collapse {
-    margin-left: 50px;
-    padding-right: 200px;
-}}
+    .navbar-expand-lg .navbar-collapse {
+        margin-left: 50px;
+        padding-right: 200px;
+    }
+}
+
+.navbar-brand {
+    display: inline-flex;
+}
 
 .dropdown-toggle-split::after, .dropright .dropdown-toggle-split::after, .dropup .dropdown-toggle-split::after {
     margin-left: 20px;

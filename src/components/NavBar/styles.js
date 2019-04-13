@@ -2,16 +2,14 @@ const styles = {
     nav: {
         width: '100%',
         margin: 0,
-        color: "#fff"
+        color: '#fff',
+        boxShadow: '0 5px 2px -2px rgba(0,0,0,.2)'
     },
     navLeft: {
         flexDirection: 'row',
     },
     navCollapse: {
         justifyContent: 'space-evenly',
-    },
-    navLogo: {
-        marginLeft: 20
     },
     navToogle: {
         border: 0,
@@ -22,8 +20,8 @@ const styles = {
     dropDown: {
         position: 'fixed',
         border: 'none',
-        right: 50,
-        top: 10
+        right: 20,
+        top: 5
     },
     dropButton: {
         backgroundColor: '#fff', 

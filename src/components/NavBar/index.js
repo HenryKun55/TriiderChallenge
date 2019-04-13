@@ -23,7 +23,7 @@ export default class NavBar extends Component {
             <Nav style={styles.navLeft}>
             <Navbar.Toggle style={styles.navToogle} aria-controls="responsive-navbar-nav" />
             <Navbar.Brand href="#home">
-                <img style={styles.navLogo} src={logo} width="100" height="25" alt="Triider Logo" />
+                <LinkContainer to="/"><img style={styles.navLogo} src={logo} width="100" height="25" alt="Triider Logo" /></LinkContainer>
             </Navbar.Brand>
             </Nav>
             <Navbar.Collapse className="mr-auto" id="responsive-navbar-nav" style={styles.navCollapse}>
@@ -33,7 +33,7 @@ export default class NavBar extends Component {
                 <Nav.Link >Mensagens</Nav.Link>
                 <Nav.Link >Ajuda</Nav.Link>
             </Navbar.Collapse>
-            <Dropdown alignRight style={styles.dropDown}>
+            <Dropdown style={styles.dropDown}>
                 <Dropdown.Toggle split style={styles.dropButton} id="dropdown-basic">
                 <img alt="logo" style={styles.img} src={logo} width="50" height="25" ></img>
                 {this.state.username}
