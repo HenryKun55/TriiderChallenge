@@ -1,0 +1,77 @@
+@media (min-width: 992px) {
+    header.header {
+        width: 30% !important;
+        text-align-last: left;
+        padding-left: 70px;
+        display: inline-flex !important;
+    }
+    .menu {
+        width: 70% !important;
+        display: inline-flex !important;
+    }
+    .nav { 
+        display: inline-flex !important;
+        justify-content: flex-end;
+    }
+    .cards {
+        display: inline-flex !important;
+        margin-left: 80px !important;
+        margin-right: 80px !important;
+    }
+
+    .card {
+        margin: 30px !important;
+    }
+
+    .container-fluid {
+        width: 100%;
+        padding-right: 40px !important;
+        padding-left: 40px !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+}
+
+header.header {
+    width: 100%;
+    text-align: center;
+}
+
+div.header {
+    padding-top: 100px;
+}
+
+.menu {
+    width: 100%;
+    display: inline-flex;
+    overflow: auto;
+}
+  
+.nav { 
+    display: -webkit-inline-box;
+    width: 100%;
+}
+
+.col-min {
+    padding: 25px;
+    margin-right: 50px;
+}
+
+.cards {
+    background: #fff;
+    justify-content: space-around;
+    margin-left: 20px !important;
+    margin-right: 20px;
+    display: grid;
+}
+
+.card {
+    margin: 15px;
+}
+
+.container-fluid {
+    width: 100%;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+

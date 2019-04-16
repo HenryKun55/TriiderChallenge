@@ -14,16 +14,35 @@ a {
     color: red;
 }
 
+img.logo{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
 .navbar-expand-lg .navbar-collapse {    
     white-space: nowrap;
     background-color: #fff!important;
 }
 
 @media (min-width: 992px) {
+    img.logo{
+        margin-left: 30px;
+        margin-right: 18px;
+    }
+
     .navbar-expand-lg .navbar-collapse {
         margin-left: 50px;
         padding-right: 200px;
     }
+
+    .dropdown-toggle {
+        margin-right: 0px;
+    }
+
+}
+
+.dropdown {
+    margin-right: 30px !important;
 }
 
 .navbar-brand {
@@ -31,7 +50,7 @@ a {
 }
 
 .dropdown-toggle-split::after, .dropright .dropdown-toggle-split::after, .dropup .dropdown-toggle-split::after {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .bg-light {

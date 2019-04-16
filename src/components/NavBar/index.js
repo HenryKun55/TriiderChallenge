@@ -23,7 +23,7 @@ export default class NavBar extends Component {
             <Nav style={styles.navLeft}>
             <Navbar.Toggle style={styles.navToogle} aria-controls="responsive-navbar-nav" />
             <Navbar.Brand href="#home">
-                <LinkContainer to="/"><img style={styles.navLogo} src={logo} width="100" height="25" alt="Triider Logo" /></LinkContainer>
+                <LinkContainer to="/"><img className="logo" style={styles.navLogo} src={logo} width="100" height="25" alt="Triider Logo" /></LinkContainer>
             </Navbar.Brand>
             </Nav>
             <Navbar.Collapse className="mr-auto" id="responsive-navbar-nav" style={styles.navCollapse}>

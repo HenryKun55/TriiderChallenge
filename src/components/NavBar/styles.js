@@ -20,8 +20,8 @@ const styles = {
     dropDown: {
         position: 'fixed',
         border: 'none',
-        right: 20,
-        top: 5
+        right: 0,
+        top: 8  
     },
     dropButton: {
         backgroundColor: '#fff', 

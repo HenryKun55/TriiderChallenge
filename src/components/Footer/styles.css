@@ -1,0 +1,20 @@
+.footer {
+    bottom: 0;
+    width: 100%;
+    background: whitesmoke;
+    border: 1px solid black;
+}
+
+div.contentFooter {
+    padding: 20px;
+}
+
+.logoFooter{
+    margin-left: 15px;
+}
+
+@media (min-width: 992px) {
+    .logoFooter{
+        margin-left: 50px;
+    }
+}
