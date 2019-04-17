@@ -54,7 +54,7 @@ const Footer = () => {
               <div className="cardFooter-line">
                 <div className="cardFooter-header-colorOne">CENTRAL DE&nbsp;</div>
                 <div className="cardFooter-header-colorTwo">AJUDA</div>
-                <div className="cardFooter-content"> Te ajudamos antes, durante ou depois do seu pedido 24 horas por dia </div>
+                <div className="cardFooter-content"> Te ajudamos antes, durante ou depois do seu pedido 24 horas por dia. </div>
               </div>
               <div className="cardFooter-footer">
                 <a className="linkHeaderFooter" href="#"> SAIBA MAIS</a>
