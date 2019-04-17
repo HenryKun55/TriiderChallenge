@@ -1,18 +1,5 @@
 @media (min-width: 992px) {
-    header.header {
-        width: 30% !important;
-        text-align-last: left;
-        padding-left: 70px;
-        display: inline-flex !important;
-    }
-    .menu {
-        width: 70% !important;
-        display: inline-flex !important;
-    }
-    .nav { 
-        display: inline-flex !important;
-        justify-content: flex-end;
-    }
+    
     .cards {
         display: inline-flex !important;
         margin-left: 80px !important;
@@ -29,6 +16,26 @@
         padding: 10px 30px;
         margin-right: 70px !important;
         margin-left: 70px !important;
+    }
+}
+
+@media (min-width: 800px) {
+
+    header.header {
+        width: 30% !important;
+        text-align-last: left;
+        padding-left: 70px;
+        display: inline-flex !important;
+    }
+
+    .menu {
+        width: 70% !important;
+        display: inline-flex !important;
+    }
+
+    .nav { 
+        display: inline-flex !important;
+        justify-content: flex-end;
     }
 }
 
