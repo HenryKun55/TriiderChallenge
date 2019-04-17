@@ -24,9 +24,9 @@ export default class Main extends Component {
 
   render() {
     return (
-        <div className="header">
+        <div className="content">
             <header className="header" >Meus Orçamentos</header>
-            <div className="menu" id="custom-scroll">
+            <div className="menu">
                 <ul className="nav">
                     <li className="col-min">Abertos</li>
                     <li className="col-min">Finalizados </li>

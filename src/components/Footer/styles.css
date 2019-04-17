@@ -1,15 +1,107 @@
 .footer {
     bottom: 0;
     width: 100%;
-    background: whitesmoke;
-    border: 1px solid black;
 }
 
-div.contentFooter {
-    padding: 15px 30px 20px 30px;
+.containerFooter {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.headerFooter {
+    height: auto;
+    background: white;
+}
+
+.contentFooter {
+    padding: 20px 40px;
     display: flex;
     align-items: center;
     align-items: baseline;
+    background: whitesmoke;
+    border: 1px solid gray;
+}
+
+.rowFooter{
+    display: -webkit-inline-box;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+    overflow: auto;
+}
+
+.cardFooter {
+    width: 290px;
+    padding: 30px 0px;
+}
+
+.colFooter{
+    padding-right: 30px;
+    flex-basis: 0;
+    flex-grow: 1;
+    position: relative;
+}
+
+.colFooter-last{
+    flex-basis: 0;
+    flex-grow: 1;
+    position: relative;
+}
+
+.cardFooter-line {
+    border-left: 2px solid #d28801;
+}
+
+.cardFooter-header-colorOne {
+    margin-left: 20px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.cardFooter-header-colorTwo {
+    display: inline-block;
+    color: #F87C00;
+    font-size: 16px;
+}
+
+.cardFooter-header-first-colorOne {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.cardFooter-header-first-colorTwo {
+    color: #F87C00;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.cardFooter-content {
+    color: rgb(133, 132, 132);
+    margin-left: 20px;
+    padding: 10px 0px;
+    font-size: 14px;
+}
+
+.cardFooter-content-first {
+    color: rgb(133, 132, 132);
+    padding: 10px 0px;
+    font-size: 14px;
+}
+
+.cardFooter-footer {
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.cardFooter-footer-first {
+    font-size: 14px;
+}
+
+.linkHeaderFooter {
+    color: #F87C00;
 }
 
 .footerRight {
@@ -30,10 +122,20 @@ div.contentFooter {
 }
 
 .linkFooter {
+    color: rgb(133, 132, 132);
     padding: 10px 0 0 0px;
 }
 
 @media (min-width: 992px) {
+
+    .rowFooter{
+        display: flex;
+    }
+
+    .containerFooter {
+        padding-right: 100px !important;
+        padding-left: 100px !important;
+    }
 
     .logoFooter{
         margin-left: 50px;
@@ -53,7 +155,8 @@ div.contentFooter {
         padding: 0px 0px 0px 40px;
     }
 
-    div.contentFooter {
-        padding: 20px;
+    .cardFooter {
+        padding: 30px 0px;
     }
+    
 }

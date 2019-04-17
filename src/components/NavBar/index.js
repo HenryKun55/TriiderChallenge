@@ -21,10 +21,10 @@ export default class NavBar extends Component {
         return (
         <Navbar style={styles.nav} collapseOnSelect fixed="top" expand="lg" bg="light" variant="light">
             <Nav style={styles.navLeft}>
-            <Navbar.Toggle style={styles.navToogle} aria-controls="responsive-navbar-nav" />
-            <Navbar.Brand href="#home">
-                <LinkContainer to="/"><img className="logo" style={styles.navLogo} src={logo} width="100" height="25" alt="Triider Logo" /></LinkContainer>
-            </Navbar.Brand>
+                <Navbar.Toggle style={styles.navToogle} aria-controls="responsive-navbar-nav" />
+                <Navbar.Brand href="#home">
+                    <LinkContainer to="/"><img className="logo" style={styles.navLogo} src={logo} width="100" height="25" alt="Triider Logo" /></LinkContainer>
+                </Navbar.Brand>
             </Nav>
             <Navbar.Collapse className="mr-auto" id="responsive-navbar-nav" style={styles.navCollapse}>
                 <LinkContainer to="/"><Nav.Link>Início</Nav.Link></LinkContainer>
@@ -35,14 +35,13 @@ export default class NavBar extends Component {
             </Navbar.Collapse>
             <Dropdown style={styles.dropDown}>
                 <Dropdown.Toggle split style={styles.dropButton} id="dropdown-basic">
-                <img alt="logo" style={styles.img} src={logo} width="50" height="25" ></img>
-                {this.state.username}
+                    <img alt="logo" style={styles.img} src={logo} width="50" height="25" ></img>
+                    {this.state.username}
                 </Dropdown.Toggle>
-
                 <Dropdown.Menu >
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
         </Navbar>
