@@ -73,6 +73,55 @@ header.header {
 }
 
 .card {
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
     margin: 15px;
+    display: block;
+}
+
+.card-title{
+    font-size: 16px;
+    text-align: center;
+}
+
+.card-subtitle{
+    padding: 5px 0px 25px 0px;
+    border-bottom: 1.5px solid rgb(208, 214, 220);
+}
+
+.card-subtitle-bottom{
+    padding: 5px 0px 15px 0px;
+    color: #6c757d!important;
+}
+
+.avatar {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    border-width: 30px !important;
+    border-color: red !important;
+    margin-right: 10px !important;
+}
+
+.cardBtn{
+    -moz-box-shadow:inset 0px 39px 0px -24px #f07808;
+	-webkit-box-shadow:inset 0px 39px 0px -24px #f07808;
+	box-shadow:inset 0px 39px 0px -24px #f07808;
+	background-color:#f07808;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+    border-radius:1px;
+    width: 100%;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #f07808;
 }
 

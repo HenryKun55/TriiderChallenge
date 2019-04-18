@@ -21,7 +21,7 @@ const Footer = () => {
               <div className="cardFooter-header-first-colorTwo">DER ERRADO ?</div>
               <div className="cardFooter-content-first"> Conte com a nossa garantia contra danos de até R$5.000,00. </div>
               <div className="cardFooter-footer-first">
-                <a className="linkHeaderFooter" href="#"> SAIBA MAIS</a>
+                <a className="linkHeaderFooter" href="#a"> SAIBA MAIS</a>
               </div>
             </div>
           </Col>
@@ -33,7 +33,7 @@ const Footer = () => {
                 <div className="cardFooter-content"> Verificamos <b>antecedentes criminais</b>, referências profissionais e muito mais.  </div>
               </div>
               <div className="cardFooter-footer">
-                <a className="linkHeaderFooter" href="#"> SAIBA MAIS</a>
+                <a className="linkHeaderFooter" href="#b"> SAIBA MAIS</a>
               </div>
             </div>
           </Col>
@@ -45,7 +45,7 @@ const Footer = () => {
                 <div className="cardFooter-content"> Pague em até 6x no seu cartão de crédito direto no app ou no site!</div>
               </div>
               <div className="cardFooter-footer">
-                <a className="linkHeaderFooter" href="#"> SAIBA MAIS</a>
+                <a className="linkHeaderFooter" href="#c"> SAIBA MAIS</a>
               </div>
             </div>
           </Col>
@@ -57,7 +57,7 @@ const Footer = () => {
                 <div className="cardFooter-content"> Te ajudamos antes, durante ou depois do seu pedido 24 horas por dia. </div>
               </div>
               <div className="cardFooter-footer">
-                <a className="linkHeaderFooter" href="#"> SAIBA MAIS</a>
+                <a className="linkHeaderFooter" href="#d"> SAIBA MAIS</a>
               </div>
             </div>
           </Col>
