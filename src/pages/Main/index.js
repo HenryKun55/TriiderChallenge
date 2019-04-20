@@ -76,7 +76,7 @@ export default class Main extends Component {
         )
     }
 
-    col = (order, key) => {
+    col = (order, key, color) => {
         let quotes = []
         let images = []
         const replaceTitle = order.serviceName.split ('-').map (
@@ -99,7 +99,7 @@ export default class Main extends Component {
                                 `Validade: 5 dias`
                             ) 
                             :
-                            (<Badge pill variant="primary"> {order.status.toUpperCase()} </Badge>) 
+                            (<Badge pill variant="primary" style={{background: color}} > {order.status.toUpperCase()} </Badge>) 
                         }
                         </Card.Subtitle>
                     </Card.Body>
@@ -150,11 +150,14 @@ export default class Main extends Component {
                         {this.state.orders.map( (order, key) => {
                             if(this.state.status === 'aberto' ) {
                                 if(order.status === 'contratado' || order.status === ''){ 
-                                    return this.col(order, key)
+                                    return this.col(order, key, 'royalblue')
                                 }
                             }else{
-                                if(this.state.status === order.status){
-                                    return this.col(order, key)
+                                if(this.state.status === order.status && this.state.status === 'finalizado'){
+                                    return this.col(order, key, 'seagreen')
+                                }
+                                if(this.state.status === order.status && this.state.status === 'cancelado'){
+                                    return this.col(order, key, 'red')
                                 }
                             }
                             

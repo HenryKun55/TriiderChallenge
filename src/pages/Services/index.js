@@ -62,7 +62,6 @@ export default class Services extends Component {
     let quotesIn = []
     let quotesOut = []
     let type = (order.status.trim() === '') ? 'in' : 'out'
-    console.log(type)
     order.quotes.map( (quote, keyQuote) => {
       if(quote.hired){
         quotesIn.push(
@@ -83,7 +82,6 @@ export default class Services extends Component {
 
   renderQuotes(){
     let order = this.props.location.order
-    console.log(this.state.quotes)
     if(order.status.trim() !== "") {
       return (
         <div>
