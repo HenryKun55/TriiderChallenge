@@ -122,7 +122,7 @@ export default class Services extends Component {
 
             <div className="help">CENTRAL DE AJUDA</div>
           </div>
-          <Container fluid={true}>
+          <Container className="containerService" fluid={true}>
             {quotes}
           </Container>
         </div>
