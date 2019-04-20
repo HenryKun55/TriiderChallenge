@@ -9,7 +9,7 @@ import { LinkContainer } from 'react-router-bootstrap'
 import styles from './styles'
 import './styles.css'
 
-import logo from '../../assets/logo.png'
+import images from '../../config/config'
 
 export default class NavBar extends Component {
 
@@ -23,19 +23,19 @@ export default class NavBar extends Component {
             <Nav style={styles.navLeft}>
                 <Navbar.Toggle style={styles.navToogle} aria-controls="responsive-navbar-nav" />
                 <Navbar.Brand href="#home">
-                    <LinkContainer to="/"><img className="logo" style={styles.navLogo} src={logo} width="100" height="25" alt="Triider Logo" /></LinkContainer>
+                    <LinkContainer to="/"><img className="logo" style={styles.navLogo} src={images.logo} width="100" height="25" alt="Triider Logo" /></LinkContainer>
                 </Navbar.Brand>
             </Nav>
             <Navbar.Collapse className="mr-auto" id="responsive-navbar-nav" style={styles.navCollapse}>
                 <LinkContainer to="/"><Nav.Link>Início</Nav.Link></LinkContainer>
-                <LinkContainer to="/services" ><Nav.Link >Catálogo de serviços</Nav.Link></LinkContainer>
+                <Nav.Link >Catálogo de serviços</Nav.Link>
                 <Nav.Link >Meus orçamentos</Nav.Link>
                 <Nav.Link >Mensagens</Nav.Link>
                 <Nav.Link >Ajuda</Nav.Link>
             </Navbar.Collapse>
             <Dropdown style={styles.dropDown}>
                 <Dropdown.Toggle split style={styles.dropButton} id="dropdown-basic">
-                    <img alt="logo" style={styles.img} src={logo} width="50" height="25" ></img>
+                    <img alt="logo" style={styles.img} src={images.juliana} width="50" height="25" ></img>
                     {this.state.username}
                 </Dropdown.Toggle>
                 <Dropdown.Menu >

@@ -1,3 +1,28 @@
+@media (min-width: 1300px) {
+    .cardHired{
+        margin-bottom: 10px !important;
+    }
+
+    .cardHiredAlternative{
+        margin-bottom: -15px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .cardHiredAlternative{
+        margin-bottom: 0px !important;
+    }
+}
+
+@media (min-width: 1100px) {
+
+    .cardHiredAlternative{
+        margin-bottom: -15px !important;
+    }
+    
+}
+
 @media (min-width: 992px) {
     
     .cards {
@@ -10,6 +35,15 @@
         margin: 30px !important;
     }
 
+    .cardTitle {
+        padding: 0px;
+    }
+
+    .cardHired{
+        margin-bottom: 25px !important;
+        margin-bottom: 15px !important;
+    }
+
     .container-fluid {
         width: auto;
         background: #fff;
@@ -17,6 +51,7 @@
         margin-right: 70px !important;
         margin-left: 70px !important;
     }
+
 }
 
 @media (min-width: 800px) {
@@ -29,6 +64,7 @@
     }
 
     .menu {
+        padding-top: 0px !important;
         width: 70% !important;
         display: inline-flex !important;
     }
@@ -49,9 +85,11 @@ header.header {
 }
 
 .menu {
+    padding-top: 20px;
     width: 100%;
     display: inline-flex;
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
   
 .nav { 
@@ -82,17 +120,28 @@ header.header {
 
 .card-title{
     font-size: 16px;
+    height: 60px;
     text-align: center;
+    padding: 0px 10px;
+    margin-bottom: 0px;
 }
 
 .card-subtitle{
-    padding: 5px 0px 25px 0px;
+    padding: 0px 0px 25px 0px;
+    font-size: 14px;
     border-bottom: 1.5px solid rgb(208, 214, 220);
 }
 
 .card-subtitle-bottom{
-    padding: 5px 0px 15px 0px;
+    margin-bottom: 0px;
+    padding-top: 15px;
     color: #6c757d!important;
+    font-size: 14px;
+}
+
+.badge-pill {
+    border-radius: 1px;
+    padding: 5px;
 }
 
 .avatar {
@@ -109,19 +158,61 @@ header.header {
     -moz-box-shadow:inset 0px 39px 0px -24px #f07808;
 	-webkit-box-shadow:inset 0px 39px 0px -24px #f07808;
 	box-shadow:inset 0px 39px 0px -24px #f07808;
-	background-color:#f07808;
+    background-color:#f07808;
+    font-family: 'Montserrat', sans-serif;
 	-moz-border-radius:4px;
 	-webkit-border-radius:4px;
     border-radius:1px;
-    width: 100%;
 	border:1px solid #ffffff;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
 	font-size:15px;
 	padding:6px 15px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #f07808;
 }
 
+.cardBtn:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.cardHired{
+    font-family: 'Montserrat', sans-serif;
+    color: #6c757d!important;
+    border: 1px solid rgba(0,0,0,.08);
+    text-align: left;
+    margin: 0px 20px;
+    padding: 5px 10px;
+    margin-bottom: 30px;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+
+.cardBottom {
+    display: grid;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.cardHiredAlternative{
+    padding: 0px 20px;
+    padding-bottom: 5px;
+    margin-bottom: 19px;
+}
+
+.cardHiredName{
+    max-height: 15px;
+    font-size: 16px;
+}
+
+.cardHiredContent{
+    font-size: 14px;
+}
+
+.row{
+    justify-content: center;
+}

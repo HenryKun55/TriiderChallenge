@@ -162,9 +162,3 @@
     
 }
 
-@media (min-width: 1300px) {
-
-    .rowFooter {
-        display: flex;
-    }
-}

@@ -11,7 +11,7 @@ const Routes = () => (
         <NavBar />
         <Switch>
             <Route path="/" exact component={Main} />
-            <Route path="/services" component={Services} />
+            <Route path="/services/:id" component={Services} />
         </Switch>
         <Footer />
     </BrowserRouter>
