@@ -26,10 +26,10 @@ export default class Services extends Component {
     window.scrollTo(0, 0)
   }
 
-  col = (order, quote, type) => (
+  col = (order, quote, type, color) => (
     <Col md={4}>
       <Card bsPrefix="card">
-        {quote.hired ? (<Badge pill variant="primary" className="badgeService">{ order.status.charAt(0).toUpperCase() + order.status.slice(1)}</Badge>) : null}
+        {quote.hired ? (<Badge pill variant="primary" style={{background: color}} className="badgeService">{ order.status.charAt(0).toUpperCase() + order.status.slice(1)}</Badge>) : null}
         <div className="cardHiredService">
         <img className="avatar" src={quote.avatar} alt={quote.avatar}></img>
           <div className="cardHiredContent">
@@ -61,15 +61,28 @@ export default class Services extends Component {
   quotes = (order) => {
     let quotesIn = []
     let quotesOut = []
+    let color = ''
     let type = (order.status.trim() === '') ? 'in' : 'out'
     order.quotes.map( (quote, keyQuote) => {
+      if(order.status === 'contratado' || order.status === ''){ 
+        color = 'royalblue'
+      }
+
+      if(order.status === 'finalizado'){
+        color = 'seagreen'
+      }
+
+      if(order.status === 'cancelado'){
+        color = 'red'
+      }
+
       if(quote.hired){
         quotesIn.push(
-          this.col(order, quote, type)
+          this.col(order, quote, type, color)
         )
       }else{
         quotesOut.push(
-          this.col(order, quote, type)
+          this.col(order, quote, type, color)
         )
       }
       return null
